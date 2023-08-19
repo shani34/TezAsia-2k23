@@ -54,13 +54,13 @@ const App: React.FC = () => {
       <Navbar />
       <div className="d-flex flex-column justify-content-center align-items-center h-100">
         {/* Ticket remaining display */}
-        <div className="py-1">Tickets remaining: {tickets}</div>
+        <div className="py-1">Remaining Tez: {tickets}</div>
         {/* Action Buttons */}
         {tickets > 0 ? (
           <button onClick={onBuyTicket} className="btn btn-primary btn-lg">
             {/* TODO 7.b - Call onBuyTicket on click */}
             {/* TODO 7.c - Show "loading..." when buying operation is pending */}
-            {loading ? "Loading.." : "Buy Ticket"}
+            {loading ? "Loading.." : "Lend Tez"}
           </button>
         ) : (
           <button onClick={onEndGame} className="btn btn-success btn-lg">
