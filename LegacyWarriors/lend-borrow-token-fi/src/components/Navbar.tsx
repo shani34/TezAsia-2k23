@@ -25,6 +25,12 @@ const Navbar: React.FC = () => {
         <a href="/" className="navbar-brand">
           Lend Tezos 
         </a>
+        <a href="/" className="navbar-brand">
+          Borrow Tezos 
+        </a>
+        <a href="/" className="navbar-brand">
+          Issue Tezos 
+        </a>
         <div className="d-flex">
           {/* TODO 4.b - Call connectWallet function onClick  */}
           <button onClick={onConnectWallet} className="btn btn-outline-info">

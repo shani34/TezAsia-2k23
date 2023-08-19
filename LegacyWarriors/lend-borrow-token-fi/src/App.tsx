@@ -69,6 +69,11 @@ const App: React.FC = () => {
             {loading ? "Loading.." : "End Game"}
           </button>
         )}
+        <button className="btn btn-primary btn-lg" style={{margin:2, padding:2}}>
+            {/* TODO 7.b - Call onBuyTicket on click */}
+            {/* TODO 7.c - Show "loading..." when buying operation is pending */}
+            {loading ? "Loading.." : "Borrow Tez"}
+        </button>
         {/* List of Players */}
         <div className="mt-2">
           {players.map((player, index) => (
