@@ -1,0 +1,92 @@
+[
+ {
+  "shortname": "Welcome",
+  "longname": "Welcome",
+  "scenario": [
+   {
+    "action": "add_module",
+    "module": "((Some (\"welcome.py\" 14)) module main ((Some (\"welcome.py\" 14)) contract_def MyContract () (((Some (\"welcome.py\" 15)) method init (myParameter1 myParameter2) (((Some (\"welcome.py\" 16)) assign ((Some (\"welcome.py\" 16)) attr ((Some (\"welcome.py\" 16)) storage) \"myParameter1\") ((Some (\"welcome.py\" 16)) var \"myParameter1\")) ((Some (\"welcome.py\" 17)) assign ((Some (\"welcome.py\" 17)) attr ((Some (\"welcome.py\" 17)) storage) \"myParameter2\") ((Some (\"welcome.py\" 17)) var \"myParameter2\")))) ((Some (\"welcome.py\" 22)) method (entrypoint myEntryPoint) (params) (((Some (\"welcome.py\" 23)) verify ((Some (\"welcome.py\" 23)) le ((Some (\"welcome.py\" 23)) attr ((Some (\"welcome.py\" 23)) storage) \"myParameter1\") ((Some (\"welcome.py\" 23)) literal (intOrNat 123)))) ((Some (\"welcome.py\" 24)) assign ((Some (\"welcome.py\" 24)) attr ((Some (\"welcome.py\" 24)) storage) \"myParameter1\") ((Some (\"welcome.py\" 24)) add ((Some (\"welcome.py\" 24)) attr ((Some (\"welcome.py\" 24)) storage) \"myParameter1\") ((Some (\"welcome.py\" 24)) parameter))))))))",
+    "line_no": "(Some (\"welcome.py\" 32))"
+   },
+   {
+    "action": "html",
+    "inner": "Welcome",
+    "line_no": "(Some (\"welcome.py\" 33))",
+    "tag": "h1"
+   },
+   {
+    "action": "instantiateContract",
+    "module": "main",
+    "name": "MyContract",
+    "args": "(((Some (\"welcome.py\" 36)) literal (intOrNat 12)) ((Some (\"welcome.py\" 36)) literal (intOrNat 123)))",
+    "kargs": "()",
+    "balance": "None",
+    "id": "((Some (\"welcome.py\" 37)) static_id 0)",
+    "line_no": "(Some (\"welcome.py\" 37))"
+   },
+   {
+    "action": "message",
+    "id": "((Some (\"welcome.py\" 37)) static_id 0)",
+    "line_no": "(Some (\"welcome.py\" 40))",
+    "message": "myEntryPoint",
+    "params": "((Some (\"welcome.py\" 40)) literal (intOrNat 12))"
+   },
+   {
+    "action": "message",
+    "id": "((Some (\"welcome.py\" 37)) static_id 0)",
+    "line_no": "(Some (\"welcome.py\" 41))",
+    "message": "myEntryPoint",
+    "params": "((Some (\"welcome.py\" 41)) literal (intOrNat 13))"
+   },
+   {
+    "action": "message",
+    "id": "((Some (\"welcome.py\" 37)) static_id 0)",
+    "line_no": "(Some (\"welcome.py\" 42))",
+    "message": "myEntryPoint",
+    "params": "((Some (\"welcome.py\" 42)) literal (intOrNat 14))"
+   },
+   {
+    "action": "message",
+    "id": "((Some (\"welcome.py\" 37)) static_id 0)",
+    "line_no": "(Some (\"welcome.py\" 43))",
+    "message": "myEntryPoint",
+    "params": "((Some (\"welcome.py\" 43)) literal (intOrNat 50))"
+   },
+   {
+    "action": "message",
+    "id": "((Some (\"welcome.py\" 37)) static_id 0)",
+    "line_no": "(Some (\"welcome.py\" 44))",
+    "message": "myEntryPoint",
+    "params": "((Some (\"welcome.py\" 44)) literal (intOrNat 50))"
+   },
+   {
+    "action": "message",
+    "id": "((Some (\"welcome.py\" 37)) static_id 0)",
+    "line_no": "(Some (\"welcome.py\" 45))",
+    "message": "myEntryPoint",
+    "params": "((Some (\"welcome.py\" 45)) literal (intOrNat 50))",
+    "valid": "((Some (\"welcome.py\" 45)) literal (bool False))"
+   },
+   {
+    "action": "verify",
+    "condition": "((Some (\"welcome.py\" 48)) eq ((Some (\"welcome.py\" 48)) attr ((Some (\"welcome.py\" 48)) contract_data ((Some (\"welcome.py\" 37)) static_id 0)) \"myParameter1\") ((Some (\"welcome.py\" 48)) literal (intOrNat 151)))",
+    "line_no": "(Some (\"welcome.py\" 48))"
+   },
+   {
+    "action": "instantiateContract",
+    "module": "main",
+    "name": "MyContract",
+    "args": "(((Some (\"welcome.py\" 51)) literal (intOrNat 1)) ((Some (\"welcome.py\" 51)) attr ((Some (\"welcome.py\" 51)) contract_data ((Some (\"welcome.py\" 37)) static_id 0)) \"myParameter1\"))",
+    "kargs": "()",
+    "balance": "None",
+    "id": "((Some (\"welcome.py\" 52)) static_id 1)",
+    "line_no": "(Some (\"welcome.py\" 52))"
+   },
+   {
+    "action": "verify",
+    "condition": "((Some (\"welcome.py\" 53)) eq ((Some (\"welcome.py\" 53)) attr ((Some (\"welcome.py\" 53)) contract_data ((Some (\"welcome.py\" 52)) static_id 1)) \"myParameter2\") ((Some (\"welcome.py\" 53)) literal (intOrNat 151)))",
+    "line_no": "(Some (\"welcome.py\" 53))"
+   }
+  ]
+ }
+]
